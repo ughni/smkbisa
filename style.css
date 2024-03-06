@@ -1,0 +1,94 @@
+
+.containerimg {
+    /* border: 2px solid black; */
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 420px;
+    display: grid;
+    grid-template-areas: 'header main' 'header main1' 'header main1';
+    grid-template-columns: repeat(auto-fill, 50%);
+    gap: 5px;
+}
+
+.containerimg img {
+    width: 100%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+/* smk */ 
+#smk h4,h2 {
+    font-weight: bold;
+}
+#smk p{
+    margin: auto;
+    width: 200px;
+}
+#smk .bi {
+    font-size: 30px;
+    color: rgb(236, 220, 0);
+}
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #55acee; /* Change the color to the desired hover color */
+}
+
+/* Styling for the social media icons */
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #55acee; /* Change the color to the desired hover color */
+}
+
+/* Responsive styling using media queries */
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer .social-icons {
+        margin-top: 5px;
+    }
+
+    footer .social-icons a {
+        font-size: 16px;
+    }
+}
